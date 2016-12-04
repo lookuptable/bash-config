@@ -2,7 +2,7 @@ HOME_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PLATFORM=`uname`
 
 # scripts=("environment_variables.sh" "colors.sh" "alias.sh")
-well_known_scripts=(environment_variables.sh colors.sh alias.sh)
+well_known_scripts=( environment_variables.sh colors.sh alias.sh gcloud.sh )
 for script in "${well_known_scripts[@]}"; do
   script_path="$HOME/.bash/$script"
   if [ -f "${script_path}" ]; then
