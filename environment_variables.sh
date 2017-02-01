@@ -14,7 +14,9 @@ export EDITOR=vim
 export HISTCONTROL=ignoredups
 export TERM=xterm-256color
 
+export GOROOT=/usr/local/go
 export GOPATH=$HOME/.go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Show man pages in color
 export LESS_TERMCAP_mb=$(printf "\e[1;31m")
