@@ -161,3 +161,9 @@ if [ ! -d "$GOPATH" ] || [ ! -d "$GOPATH/src" ]; then
   echo "$GOPATH or $GOPATH/src does not exist; creating it"
   mkdir -p $GOPATH/src
 fi
+
+if [ -d local ]; then
+  for f in local/*.sh; do
+    source $f
+  done
+fi
