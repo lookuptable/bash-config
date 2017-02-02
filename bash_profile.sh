@@ -6,7 +6,6 @@ well_known_scripts=(
   alias.sh
   colors.sh
   environment_variables.sh
-  gcloud.sh
 )
 for script in "${well_known_scripts[@]}"; do
   script_path="$HOME/.bash/$script"
@@ -162,8 +161,9 @@ if [ ! -d "$GOPATH" ] || [ ! -d "$GOPATH/src" ]; then
   mkdir -p $GOPATH/src
 fi
 
-if [ -d local ]; then
-  for f in local/*.sh; do
-    source $f
+LOCAL_SCRIPT_DIR="$HOME/.bash/local"
+if [ -d "$LOCAL_SCRIPT_DIR" ]; then
+  for script in $LOCAL_SCRIPT_DIR/*.sh; do
+    source $script
   done
 fi
