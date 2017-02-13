@@ -3,9 +3,10 @@ PLATFORM=`uname`
 
 # scripts=("environment_variables.sh" "colors.sh" "alias.sh")
 well_known_scripts=(
+  # This has to be sourced first cause some aliases depend on env varibles
+  environment_variables.sh
   alias.sh
   colors.sh
-  environment_variables.sh
 )
 for script in "${well_known_scripts[@]}"; do
   script_path="$HOME/.bash/$script"
