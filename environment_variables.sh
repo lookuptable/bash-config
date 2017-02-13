@@ -28,7 +28,6 @@ export LESS_TERMCAP_ue=$(printf "\e[0m")
 export LESS_TERMCAP_us=$(printf "\e[1;32m")
 
 export PATH=/opt/apache-maven-3.3.9/bin:$PATH
-export PATH=$PATH:$GOPATH/bin
 
 if [[ "$PLATFORM" == "Darwim" ]]; then
   # /usr/libexec/java_home is only available under MacOS
