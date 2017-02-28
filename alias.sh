@@ -69,7 +69,7 @@ alias fix_brew='sudo chown -R $(whoami) /usr/local'
 alias psp='pbpaste | sort | pbcopy'
 
 alias github="cd ${GOPATH}/src/github.com/"
-alias istio="cd ${GOPATH}/src/github.com/istio"
+alias istio="cd ${GOPATH}/src/istio.io/"
 alias lut="cd ${GOPATH}/src/github.com/lookuptable"
 alias k8s="cd ${GOPATH}/src/k8s.io/"
 
