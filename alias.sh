@@ -72,3 +72,7 @@ alias github="cd ${GOPATH}/src/github.com/"
 alias istio="cd ${GOPATH}/src/github.com/istio"
 alias lut="cd ${GOPATH}/src/github.com/lookuptable"
 alias k8s="cd ${GOPATH}/src/k8s.io/"
+
+# bazel
+alias bb="bazel build //..."
+alias bt="bazel test //..."
