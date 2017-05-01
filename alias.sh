@@ -29,8 +29,8 @@ alias mkdir='mkdir -pv'
 
 # Grep customizations
 alias grep='grep --color=auto'       # color flag enabled
-alias rgrep='grep -R --color=auto'   # recursive grep
-alias lgrep='grep -Rl --color=auto'  # list files with matches
+alias rgrep='grep -r --color=auto'   # recursive grep
+alias lgrep='grep -rl --color=auto'  # list files with matches
 
 # System monitoring
 alias cpu='top -o cpu'
@@ -76,3 +76,7 @@ alias k8s="cd ${GOPATH}/src/k8s.io/"
 # bazel
 alias bb="bazel build //..."
 alias bt="bazel test //..."
+
+# go related utilities
+alias gg='rgrep --include="*.go"'
+alias ggnt='rgrep --include="*.go" --exclude="*_test.go"'
