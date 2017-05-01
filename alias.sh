@@ -80,3 +80,7 @@ alias bt="bazel test //..."
 # go related utilities
 alias gg='rgrep --include="*.go"'
 alias ggnt='rgrep --include="*.go" --exclude="*_test.go"'
+
+# python related utilities
+alias pg='rgrep --include="*.py"'
+alias pgnt='rgrep --include="*.py" --exclude="*test*" --exclude-dir=.tox'
