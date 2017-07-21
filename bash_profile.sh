@@ -168,3 +168,9 @@ if [ -d "$LOCAL_SCRIPT_DIR" ]; then
     source $script
   done
 fi
+
+clear_vim_cache() {
+  if [ -d ~/.vim/cache/ ]; then
+    rm -f ~/.vim/cache/*
+  fi
+}
