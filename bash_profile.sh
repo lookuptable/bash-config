@@ -174,3 +174,11 @@ clear_vim_cache() {
     rm -f ~/.vim/cache/*
   fi
 }
+
+random_str() {
+  size=$1
+  if [ -z "$size" ]; then
+    size=8
+  fi
+  cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w $size | head -n 1
+}
