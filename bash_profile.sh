@@ -66,8 +66,8 @@ shopt -s extglob
 # Automatically correct mistyped directory names
 shopt -s cdspell
 
-# Include dot files in filename expansion results
-shopt -s dotglob
+# Exclude dot files in filename expansion results
+shopt -u dotglob
 
 # Expand aliases
 shopt -s expand_aliases
