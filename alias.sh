@@ -78,8 +78,8 @@ alias bb="bazel build //..."
 alias bt="bazel test //..."
 
 # go related utilities
-alias gg='rgrep --include="*.go"'
-alias ggnt='rgrep --include="*.go" --exclude="*_test.go"'
+alias gg='rgrep --include="*.go" --exclude-dir="vendor"'
+alias ggnt='rgrep --include="*.go" --exclude="*_test.go" --exclude-dir="vendor"'
 
 # python related utilities
 alias pg='rgrep --include="*.py"'
