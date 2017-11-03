@@ -156,12 +156,6 @@ jwt_decode() {
   echo $payload | base64 --decode | python -m json.tool
 }
 
-# Set up go path
-if [ ! -d "$GOPATH" ] || [ ! -d "$GOPATH/src" ]; then
-  echo "$GOPATH or $GOPATH/src does not exist; creating it"
-  mkdir -p $GOPATH/src
-fi
-
 LOCAL_SCRIPT_DIR="$HOME/.bash/local"
 if [ -d "$LOCAL_SCRIPT_DIR" ]; then
   for script in $LOCAL_SCRIPT_DIR/*.sh; do
