@@ -29,8 +29,11 @@ alias mkdir='mkdir -pv'
 
 # Grep customizations
 alias grep='grep --color=auto'       # color flag enabled
-alias rgrep='grep -r --color=auto'   # recursive grep
 alias lgrep='grep -rl --color=auto'  # list files with matches
+function rgrep() {
+  echo "grep -r --color=auto $@ ."
+  grep -r --color=auto $@ .
+}
 
 # System monitoring
 alias cpu='top -o cpu'
@@ -84,3 +87,20 @@ alias ggnt='rgrep --include="*.go" --exclude="*_test.go" --exclude-dir="vendor"'
 # python related utilities
 alias pg='rgrep --include="*.py"'
 alias pgnt='rgrep --include="*.py" --exclude="*test*" --exclude-dir=.tox'
+
+alias k='kubectl'
+alias kd='kubectl describe'
+alias kdd='kubectl describe deploy'
+alias kdn='kubectl describe no'
+alias kdp='kubectl describe po'
+alias kds='kubectl describe svc'
+alias ke='kubectl edit'
+alias ked='kubectl edit deploy'
+alias ken='kubectl edit no'
+alias kep='kubectl edit po'
+alias kes='kubectl edit svc'
+alias kg='kubectl get'
+alias kgd='kubectl get deploy'
+alias kgn='kubectl get no'
+alias kgp='kubectl get po'
+alias kgs='kubectl get svc'
