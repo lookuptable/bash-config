@@ -35,8 +35,8 @@ print_before_the_prompt() {
     fi
 
     DIR=`pwd | sed -e "s!$HOME!~!"`
-    if [ ${#DIR} -gt 50 ]; then
-        CD=${DIR:0:22}...${DIR:${#DIR}-25}
+    if [ ${#DIR} -gt 100 ]; then
+        CD=${DIR:0:47}...${DIR:${#DIR}-50}
     else
         CD=$DIR
     fi
