@@ -86,7 +86,7 @@ bind "set show-all-if-ambiguous on"
 #################
 
 # Grep from history
-hg() {
+hisg() {
     term=$1
     history | grep $term
 }
