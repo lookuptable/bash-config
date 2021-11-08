@@ -1,7 +1,6 @@
 case "$PLATFORM" in
   "Darwin")
     alias ls='ls -GT'
-    alias vim='mvim -v'
 
     source $HOME/.bash/darwin-alias.sh
     ;;
@@ -67,7 +66,7 @@ alias xlog='git log --date-order --graph --format="%C(green)%h %Creset%C(yellow)
 
 alias temp='target=`date "+%Y%m%d"`; mkdir -p ~/.temp/${target}; cd ~/.temp/${target}'
 
-alias fix_brew='sudo chown -R $(whoami) /usr/local'
+alias fix_brew='sudo chown -R $(whoami) /usr/local/bin /usr/local/share/doc'
 
 alias psp='pbpaste | sort | pbcopy'
 
