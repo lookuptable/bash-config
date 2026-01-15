@@ -176,3 +176,4 @@ random_str() {
   fi
   cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w $size | head -n 1
 }
+. "$HOME/.cargo/env"
